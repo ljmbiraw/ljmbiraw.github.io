@@ -7,18 +7,18 @@
     text-decoration: none;
     border: none;
     outline: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
 }
 
 html, body {
-    font-size: 80.5%;
+    font-size: 90%;
 }   
 
 body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: aqua;
+    background-color: black;
     color: rgb(248, 246, 246);
 }
     header {
@@ -39,7 +39,7 @@ body {
 
     .logo {
     font-size: 3rem;
-    color: #f8f7f7;
+    color: blue;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -55,27 +55,28 @@ body {
     margin-left: 3rem;
     font-weight: 500;
     transition: 0.5s ease;
-    border-bottom: 3px solid transparent;
+    border-bottom: 7px solid transparent;
     }
 
     nav a:hover,
     nav a.active {
-        border-bottom: 3px solid red;
-        color: red;
+        border-bottom: 3px solid blue;
+        color: blue;
     }
 
-    @media(max-width: 995px){
+    @media(max-width: 800px){
         nav {
             position: absolute;
-            top: 50%;
-            right: -10%;
-            width: 30%;
-            border-left: 3px solid red;
-            border-bottom: 3px solid red;
-            border-bottom-left-radius: 4rem;
-            padding: 4rem solid;
+            display: none;
+            top: 0%;
+            right: -2%;
+            width: 40%;
+            border-left: 3px solid blue;
+            border-bottom: 3px solid blue;
+            border-bottom-left-radius: 2rem;
+            padding: 1rem solid;
             background-color: #080808e0;
-            border-top: 0.1rem solid red;
+            border-top: 0.1rem solid blue;
         }
 
         nav.active {
@@ -85,13 +86,13 @@ body {
         nav a {
             display: block;
             margin: 3rem 0;
-            font-size: 1.3rem;
+            font-size: 2rem;
         }
 
         nav a:hover,
         nav a.active {
-            border-bottom: 0.5rem solid red;
-            padding: 1rem;
+            border-bottom: 0.5rem solid blue;
+            padding: -2rem;
             border-radius: 0.5rem;
     }   
 }
@@ -116,23 +117,23 @@ section {
 }
 
 span{
-    color: red;
+    color: blue;
 }
 
 .home-content h1{
-    font-size: 5rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
-    font-weight: 800;
+    font-weight: 0;
 }
 
 .home-img{
-    border-radius: 100%;
+    border-radius: 60%;
 }
 
 .home-img img{
     position: relative;
-    width: 32vw;
-    border-radius: 90%;
+    width: 38vw;
+    border-radius: 40%;
     box-shadow: 0 0 25px solid;
     cursor: pointer;
     transition: 0.5s linear;
@@ -155,7 +156,7 @@ span{
     border-radius: 80%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3 ease;
-    color: white;
+    color: red;
 }
 
 .social-icons a:hover{
@@ -171,10 +172,10 @@ span{
     background-color: black;
     border-radius: 5rem;
     font-size: 2rem;
-    color: red;
+    color: blue;
     letter-spacing: 0.3;
     font-weight: 900;
-    border: 2px solid red;
+    border: 2px solid blue;
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -210,7 +211,55 @@ span{
     height: 100%;
     border-left: 3px solid black;
     right: -8;
-    animation: cursor 0.6s infinite;
+    animation: cursor 0.5s infinite;
 }
 
+@keyframes cursor{
+    to{
+        border-left:  3px solid whitesmoke;
+    }
+}
 
+@keyframes words{
+    0%,20%{
+        content: "A Graduate";
+    }
+     21%,40%{
+        content: "A Web Developer";
+    }
+    41%,60%{
+        content: "A Tiktoker";
+    }
+    61%,80%{
+        content: "A Marketer";
+    }
+    81%,100%{
+        content: "An Artist";
+    }
+}
+
+@media(max-width: 1000px;){
+    .home{
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px){
+    .home{
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3{
+        font-size: 2rem;
+    }
+
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-img.img{
+        width: 70vh;
+        margin-top: 4rem;
+    }
+}
