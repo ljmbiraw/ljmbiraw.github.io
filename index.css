@@ -69,7 +69,7 @@ body {
             position: absolute;
             display: none;
             top: 0%;
-            right: -2%;
+            right: 0%;
             width: 40%;
             border-left: 3px solid blue;
             border-bottom: 3px solid blue;
@@ -124,6 +124,9 @@ span{
     font-size: 3rem;
     margin-bottom: 2rem;
     font-weight: 0;
+}
+.home-content p{
+    font-size: 1.25rem;
 }
 
 .home-img{
@@ -259,7 +262,7 @@ span{
     }
 
     .home-img.img{
-        width: 70vh;
+        width: 70vw;
         margin-top: 4rem;
     }
 }
