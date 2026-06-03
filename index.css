@@ -126,7 +126,7 @@ span{
     font-weight: 0;
 }
 .home-content p{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .home-img{
@@ -135,7 +135,7 @@ span{
 
 .home-img img{
     position: relative;
-    width: 38vw;
+    width: 45vw;
     border-radius: 40%;
     box-shadow: 0 0 25px solid;
     cursor: pointer;
