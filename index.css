@@ -64,10 +64,9 @@ body {
         color: blue;
     }
 
-    @media(max-width: 800px){
+    @media(max-width: 995px){
         nav {
             position: absolute;
-            display: none;
             top: 0%;
             right: 0%;
             width: 40%;
